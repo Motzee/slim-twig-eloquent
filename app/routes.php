@@ -1,6 +1,10 @@
 <?php
 
- $app->get('/home', 'HomeController:index') ;
+$app->get('/home', 'HomeController:index') ;
+
+$app->get('/create', 'HomeController:create') ;
+
+$app->get('/read', 'HomeController:getall') ;
 
 /*
 $app->get('/first', function($request, $response) {
